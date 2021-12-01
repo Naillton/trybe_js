@@ -18,7 +18,7 @@ for(let i = 0; i < 5; i++){
 } */
 
 //depois de muita luta e de tirar duvidas na mentoria consegui fazer a questao com menos codigo
-/* let n = 5;
+let n = 5;
 let space = "";
 let ast = "";
 for(let i = 0; i < 5; i++){
@@ -32,4 +32,4 @@ for(let i = 0; i < 5; i++){
     console.log(space+ast);
     space = "";
     n--;
-} */
+}
