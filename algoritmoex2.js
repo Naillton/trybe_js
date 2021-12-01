@@ -1,4 +1,4 @@
- let n = 5;
+let n = 5;
 let ast = '';
 for(let i = 1; i <= 5; i++){
     ast = ast+'*';
