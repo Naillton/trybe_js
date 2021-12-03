@@ -5,7 +5,14 @@
       <h2 class="title">Título</h2>
       <p id="paragraph">Dê uma cor para este parágrafo!</p>
       <h4 class="title">Subtítulo</h4>
-      <p id="second-paragraph">Segundo parágrafo!</p>
+      <p id="second-paragraph">Segundo <strong>parágrafo!</strong></p>
+      <p id="second-paragraph">Segundo <strong>parágrafo!</strong></p>
+      <p id="second-paragraph">Segundo <strong>parágrafo!</strong></p>
+      <p id="second-paragraph">Segundo <strong>parágrafo!</strong></p>
+      <p id="second-paragraph">Segundo <strong>parágrafo!</strong></p>
+      <p id="second-paragraph">Segundo <strong>parágrafo!</strong></p>
+      <p id="second-paragraph">Segundo <strong>parágrafo!</strong></p>
+      <p id="second-paragraph">Segundo <strong>parágrafo!</strong></p>
     </header>
     <script>
       const paragraph = document.getElementById("paragraph");
@@ -18,6 +25,15 @@
         classes[i].style.color = "red";
       }
       //Desta forma conseguimos acessar valores de uma class
+
+      //Para acesarmos as tags de um elemento html sem precisar usar class ou id passamos o getElementsByTagName
+      //Onde tera o mesmo comportamento da ClassName colocando as nossas tags em uma lista
+      let tags = document.getElementsByTagName("strong");
+      for(let i = 0; i < tags.length; i += 1){
+        tags[i].innerText = "Formatando Tags com JS";
+        tags[i].style.color = "blue";
+      }
+      
     </script>
   </body>
 </html>
