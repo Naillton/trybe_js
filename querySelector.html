@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query Selector</title>
+</head>
+<body>
+    <div class="primeiros">
+        <p class="campeao">Flamengo</p>
+        <p class="demais">Corinthians</p>
+        <p class="demais">Palmeiras</p>
+    </div>
+
+    <div class="outros">
+        <p class="demais">atletico mg</p>
+        <p class="demais">atletico pr</p>
+        <p class="demais">rb bragantino</p>
+    </div>
+    <script>
+    //De uma forma mais abrangente o querySelector expresao usada vai retornar so o primeiro elemento de um tipo informado
+    document.querySelector(".demais").style.color = "green";
+    //como mostrado abaixo apenas o corinthians ficou com a cor verde pois o querySelector seleciona o primeiro seletor
+    document.querySelector(".outros .demais").style.color = "yellow";
+    </script>
+    </body>
+</html>
