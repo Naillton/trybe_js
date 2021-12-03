@@ -22,7 +22,17 @@
     //De uma forma mais abrangente o querySelector expresao usada vai retornar so o primeiro elemento de um tipo informado
     document.querySelector(".demais").style.color = "green";
     //como mostrado abaixo apenas o corinthians ficou com a cor verde pois o querySelector seleciona o primeiro seletor
-    document.querySelector(".outros .demais").style.color = "yellow";
+    document.querySelector(".primeiros .campeao").style.color = "orange";
+    //para selecionar mais de um querySelector podemos usar o querySelectorAll que vai nos retornar uma node list
+    //ATENCAO a node list do querySelectorAll e diferente das listas usadas no getElementsClassName e getElementsByTagName olhar o mdn para mais detalhes
+    function paragrafos(){
+        let demais = document.querySelectorAll(".demais");
+        //acessando os valores da node list
+        for(let value of demais){
+            value.style.color = "blue";
+        }
+    }
+    //chamando a funcao no navegador teremos menos o primiero paragrafo com a cor azul
     </script>
     </body>
 </html>
