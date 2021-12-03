@@ -1,11 +1,11 @@
-/* let pizzasDoces = {
+let pizzasDoces = {
     sabor: 'Calabresa',
     preco: 24.90,
     bordaChedar: true
 }
 for(let key in pizzasDoces){
     console.log(key+": "+pizzasDoces[key]);
-} */
+}
 
 /* let pizzas = ['Calabresa', 'Frango', 'Mussarela'];
 for(let key in pizzas){
