@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <header>
+      <h2 class="title">Título</h2>
+      <p id="paragraph">Dê uma cor para este parágrafo!</p>
+      <h4 class="title">Subtítulo</h4>
+      <p id="second-paragraph">Segundo parágrafo!</p>
+    </header>
+    <script>
+      const paragraph = document.getElementById("paragraph");
+      paragraph.style.color = "red";
+      //para acessar um paragrafo usamos o getElementsByClassName onde com ele conseguimos pegar todas as classes do nosso html
+      //ATENCAO as classes se comportam como array entao nao podemos acessalas diretamente. Teremos que acessar fazendo um loop
+      let classes = document.getElementsByClassName("title");
+      for(let i = 0; i < classes.length; i += 1){
+        classes[i].innerText = "Marilia meu amor";
+        classes[i].style.color = "red";
+      }
+      //Desta forma conseguimos acessar valores de uma class
+    </script>
+  </body>
+</html>
