@@ -55,3 +55,21 @@ Acessando o texto: document.getElementById('elementoOndeVoceEsta').nextSibling
 " Atenção! "
 Acessando 3 filho do elemento onde eu estou: document.getElementById('elementoOndeVoceEsta').nextElementSibling
 Acessando o 3 filho a partir do pai: document.getElementById('pai').lastElementChild.previousElementSibling -->
+
+Criando um irmao para o elemento em que voce esta:
+let secao = document.createElement('section')
+secao.id = 'irmaoDaSectionOndeVoceEsta'
+document.getElementById('pai').appendChild(seca)
+-------------------------------------------------
+criando um filho de onde voce esta
+let filho = document.createElement('section')
+filho.id = 'filhoDeOndeVoceEsta'
+document.querySelector('#elementoOndeVoceEsta').appendChild(filho)
+---------------------------------------------------------------------------------
+criando filho para o primeiro filho
+let filho = document.createElement('section')
+filho.id = 'filhoDoPrimeiroFilho'
+document.querySelector('#primeiroFilho').appendChild(filho)
+---------------------------------------------------------------------------------
+Acessando terceiro filho
+document.querySelector('#filhoDoPrimeiroFilho').parentNode.nextElementSibling.nextElementSibling
