@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Listas</h1>
+    </header>
+
+    <!-- //document.querySelector('.lista-frutas').parentNode.parentNode.parentNode
+    //usando o parentNode nos conseguimos acessar o pai do elemento lista-frutas
+    //neste exemplo no primeiro .parentNode acessamos o nav e quanto mais parentNode colocarmos mais elemenos pai acessaremos -->
+    <section>
+        <nav>
+            <ul class="lista-frutas">
+                <li>Abacaxi</li>
+                <li>Uva</li>
+                <li>Manga</li>
+                <li>Goiaba</li>
+                <li>Pera</li>
+                <li>Maca</li>
+            </ul>
+        </nav>
+    </section>
+
+    <section>
+        <nav>
+            <ul class="lista-variados">
+                <li>ruffles</li>
+                <li>pingles</li>
+                <li>yoki</li>
+                <li>miojo</li>
+                <li>cup noodles</li>
+                <li>bombom</li>
+            </ul>
+        </nav>
+    </section>
+    
+</body>
+</html>
+
+<!-- parentNode : retorna o nó pai.
+     parentElement : retorna o elemento pai.
+     parent node e parentElement sao parecidos pois ambos retornam o pai do elemento
+    ---------------------------------------------------------------------------------
+    childNodes : retorna um NodeList com todos os nós filhos.
+    children : retorna um HTMLCollection com todos os elementos filhos.
+    os childrens retornam uma nodelist ou um array htmlcollection com os filho do elemento informado
+    ------------------------------------------------------------------------------------------------
+    firstChild : retorna o primeiro nó filho.
+    firstElementChild : retorna o primeiro elemento filho.
+    nessas propriedades conseguimos acessar os primeiros filhos de um elemento
+    com o firstChild retornamos o no filho ou seja o texto e com o firstElementChild retornamos todo o <li> da lista
+    -----------------------------------------------------------------------------------------------------------------
+    lastChild : retorna o último nó filho.
+    lastElementChild : retorna o último elemento filho.
+    Semelhante a os primeiros filhos com o lastChild e o lastElement acessamos os resultados de texto para o lastChild
+    e elemento para o lastElement 
+    ------------------------------------------------------------------------------------------------------------------
+    nextSibling : retorna o próximo nó.
+    nextElementSibling : retorna o próximo elemento.
+    Com o nextSibiling temos como retorno o proximo no do elemento e com o nextElement o proximo elemento que no caso da
+    lista acima retorna null pois nao temos mais um elemento na secao
+    ---------------------------------------------------------------------------------------------------------------------
+    previousSibling : retorna o nó anterior.
+    previousElementSibling : retorna o elemento anterior.
+    A mesma coisa do anterior so que retornando o no anterior e o elemento anterior
+    -->
