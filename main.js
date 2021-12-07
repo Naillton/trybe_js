@@ -25,11 +25,13 @@ const header = document.querySelector('h1')
 // Segue abaixo um exemplo do uso de event.target:
 
 //funcao para adcionar classe a primeiroa li
-function add(){
-    let addClass = document.querySelector('li')
-    addClass.className = 'tech'
+function add(event){
+    let x = document.querySelector('.tech')
+    x.classList.remove('tech')
+    event.target.className = 'tech'
 }
-
+secondLi.addEventListener("click", add)
+thirdLi.addEventListener("click", add)
 //funcao para alterar o valor do texto do bloco verde
 function alterText(){
     firstLi.innerText = input.value;
