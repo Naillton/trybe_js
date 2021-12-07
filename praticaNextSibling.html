@@ -43,6 +43,12 @@ console.log(document.getElementById('start').nextElementSibling) // <p>elemento<
           <section id="quartoEUltimoFilho"></section>
         </section>
       </main>
+      <script>
+          document.getElementById("pai").firstElementChild.remove()
+          document.getElementById("pai").lastElementChild.remove()
+          document.getElementById("pai").lastElementChild.remove()
+          document.getElementById("elementoOndeVoceEsta").lastElementChild.remove()
+      </script>
 </body>
 </html>
 
@@ -56,7 +62,7 @@ Acessando o texto: document.getElementById('elementoOndeVoceEsta').nextSibling
 Acessando 3 filho do elemento onde eu estou: document.getElementById('elementoOndeVoceEsta').nextElementSibling
 Acessando o 3 filho a partir do pai: document.getElementById('pai').lastElementChild.previousElementSibling -->
 
-Criando um irmao para o elemento em que voce esta:
+<!-- Criando um irmao para o elemento em que voce esta:
 let secao = document.createElement('section')
 secao.id = 'irmaoDaSectionOndeVoceEsta'
 document.getElementById('pai').appendChild(seca)
@@ -72,4 +78,4 @@ filho.id = 'filhoDoPrimeiroFilho'
 document.querySelector('#primeiroFilho').appendChild(filho)
 ---------------------------------------------------------------------------------
 Acessando terceiro filho
-document.querySelector('#filhoDoPrimeiroFilho').parentNode.nextElementSibling.nextElementSibling
+document.querySelector('#filhoDoPrimeiroFilho').parentNode.nextElementSibling.nextElementSibling -->

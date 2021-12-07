@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="trybe">
+        Ola, somos a trybe e temos uma oferta imperdivel para voce
+    </p>
+
+    <button id="btn">Mais Informacoes</button>
+    
+    <p id="trybe-continua">Ola nao somos um paragrafo com evento</p>
+    <script>
+        /* window.onload = Hamburguer
+
+        function Hamburguer(){
+            alert("pedido saiu para entrega")
+            alert("seu pedido chegou, VAMOS COMER!! ")
+        }
+
+        alert("pedido recebido na hamburgueria, estamos preparando")
+        //evento para carregamento de tela
+        function jsCarregado(){
+            alert('Pagina Carregada')
+        }
+
+        //evento de click no botao
+        function maisInfos(){
+            let texto = document.getElementById("trybe-continua")
+            texto.innerText = "Aqui voce aprende sobre soft skills e hard skills"
+        } */
+
+        //pegando o id do paragrafo
+        let clickP = document.getElementById("trybe");
+        
+        //adcionando evento de click
+        clickP.addEventListener("click",clickParagrafo);
+        
+        //pegando o id do paragrafo
+        let mouse = document.getElementById("trybe-continua")
+
+        //adcionando evento do paragrafo com mouse
+        mouse.addEventListener("mouseover", paragraphSobre);
+
+
+        function clickParagrafo(eventoDeOrigem){
+            console.log(eventoDeOrigem.target)
+            console.log(eventoDeOrigem.type)           
+        }
+
+        function paragraphSobre(eventoMouse){
+            console.log("Voce esta com o mouse sobre o botao")
+            console.log(eventoMouse.target)
+        }
+
+        //pegando id do botao
+        let mouseOverLeave = document.getElementById("btn")
+
+        //adcionando evonto mouse por cima do botao
+        mouseOverLeave.addEventListener("mouseover", mouseSobre)
+
+        //adciona evento de mouse leave o botao
+        mouseOverLeave.addEventListener("mouseleave", mouseFora)
+        
+        //funcoes mouseSobre e mouseFora
+        function mouseSobre(evento){
+            console.log("Mouse sobre o botao")
+            console.log(evento.target)
+        }
+
+        function mouseFora(){
+            console.log("Mouse fora")
+        }
+    </script>
+</body>
+</html>
