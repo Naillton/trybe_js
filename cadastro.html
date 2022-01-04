@@ -14,7 +14,7 @@
         <form>
             <fieldset>
                 <legend>Form de cadastro</legend>
-                <p>
+                <div>
                     <label for="fullName">Nome completo:</label>
                     <input placeholder="Digite seu nome completo" id="fullName" required maxlength="100" autofocus ><br><br>
                     <label for="input-email">E-mail:</label>
@@ -52,8 +52,11 @@
                     <label for="senha">Digite a senha</label>
                     <input type="password" required maxlength="18" autofocus id="senha" placeholder="Digite sua senha"><br><br>
                     <label for="senha">Redigite a senha</label>
-                    <input type="password" required maxlength="18" autofocus id="senha" placeholder="Digite sua senha"> 
-                </p>
+                    <input type="password" required maxlength="18" autofocus id="senha" placeholder="Digite sua senha"><br><br>
+                    <label>
+                        <input type="checkbox" name="escolha" id="checkB" checked>
+                        Lembrar senha e email para login?</label>
+                </div>
             </fieldset>
         </form>
     </main>
