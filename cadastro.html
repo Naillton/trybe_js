@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <head>
+        <h1>Cadastro</h1>
+    </head>
+    <main>
+        <form>
+            <fieldset>
+                <legend>Form de cadastro</legend>
+                <p>
+                    <label for="fullName">Nome completo:</label>
+                    <input placeholder="Digite seu nome completo" id="fullName" required maxlength="100" autofocus ><br><br>
+                    <label for="input-email">E-mail:</label>
+                    <input type="email" name="email" id="input-email" placeholder="Digite seu email" maxlength="50" required/><br><br>
+                    <label for="dropdown">Estado de nascimento:</label>
+                    <select name="estado" id="dorpdown">
+                            <option value = "AC"> Acre </option>
+                            <option value = "AL"> Alagoas </option>
+                            <option value = "AP"> Amapá </option>
+                            <option value = "AM"> Amazonas </option>
+                            <option value = "BA"> Bahia </option>
+                            <option value = "CE"> Ceará </option>
+                            <option value = "DF"> Distrito Federal </option>
+                            <option value = "ES"> Espírito Santo </option>
+                            <option value = "GO"> Goiás </option>
+                            <option value = "MA"> Maranhão </option>
+                            <option value = "MT"> Mato Grosso </option>
+                            <option value = "MS"> Mato Grosso do Sul </option>
+                            <option value = "MG"> Minas Gerais </option>
+                            <option value = "PA"> Pará </option>
+                            <option value = "PB"> Paraíba </option>
+                            <option value = "PR"> Paraná </option>
+                            <option value = "PE" selected> Pernambuco </option>
+                            <option value = "PI"> Piauí </option>
+                            <option value = "RJ"> Rio de Janeiro </option>
+                            <option value = "RN"> Rio Grande do Norte </option>
+                            <option value = "RS"> Rio Grande do Sul </option>
+                            <option value = "RO"> Rondônia </option>
+                            <option value = "RR"> Roraima </option>
+                            <option value = "SC"> Santa Catarina </option>
+                            <option value = "SP"> São Paulo </option>
+                            <option value = "SE"> Sergipe </option>
+                            <option value = "TO"> Tocantins </option>
+                    </select><br><br>
+                    <label for="senha">Digite a senha</label>
+                    <input type="password" required maxlength="18" autofocus id="senha" placeholder="Digite sua senha"><br><br>
+                    <label for="senha">Redigite a senha</label>
+                    <input type="password" required maxlength="18" autofocus id="senha" placeholder="Digite sua senha"> 
+                </p>
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>
