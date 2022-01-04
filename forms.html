@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <head>
+        <h1>Formularios</h1>
+    </head>
+    <main>
+        <form action="" method="GET">
+            <fieldset>
+              <legend>Primeiro formulario Trybe</legend>
+              <p>
+                <label for="input-text">Digite seu nome:</label>
+                <input type="text" name="nome" required placeholder="Digite seu nome" id="input-text"/><br>
+                <label for="input-email">Digite seu email:</label>
+                <input type="email" name="email" required placeholder="Digite seu email" id="input-email"/><br><br>
+                <label for="input-bigText">Nos de um feedback:</label>
+                <textarea cols="30" rows="5" maxlength="500" minlength="15">Gostei bastante</textarea>
+              </p>
+              <button type="submit">Enviar</button>
+            </fieldset>
+          </form>
+
+          <form>
+              <fieldset>
+                  <legend>Formulario de escolha</legend>
+                  <p>
+                    <label for="escolha">Escolha quais noticias voce quer receber!!</label><br>
+                        <input type="checkbox" value="sport" name="escolha" checked>Esportes<br>
+                        <input type="checkbox" value="religiao" name="escolha">vaticano<br>
+                        <input type="checkbox" value="voto" name="escolha">Eleicoes<br>
+                        <input type="checkbox" value="doenca" name="escolha">Covid<br>
+                        <br>
+                        <br>
+                        <label for="hub-1">
+                            <input type="radio" id="hub-1" name="hub" value="sp" required>Sao Paulo
+                        </label><br>
+                        <label for="hub-2">
+                            <input type="radio" id="hub-2" name="hub" value="rj" required>Rio de Janeiro
+                        </label><br>
+                        <label for="hub-3">
+                            <input type="radio" id="hub-3" name="hub" value="rf" required>Recife
+                        </label><br>
+                        <label for="hub-1">
+                            <input type="radio" id="hub-4" name="hub" value="EUA" required>Estados Unidos
+                        </label><br>
+                  </p>
+                  <button type="submit">Enviar</button>
+              </fieldset>
+          </form>
+
+          <form action="" method="GET">
+              <fieldset>
+                  <legend>Estado onde nasceu</legend>
+                  <select name="estado" id="dropdown-estado">
+                    <option value="sp">Sao Paulo</option>
+                    <option value="rj">Rio de Janeiro</option>
+                    <option value="rf" selected>Recife</option>
+                    <option value="mg">Minas Gerais</option>
+                    <option value="am">Amazonas</option>
+                    <option value="ac">Acre</option>
+                    <option value="fl">Florianopolis</option>
+                  </select>
+                  <button type="submit">Enviar</button>
+              </fieldset>
+          </form>
+
+          <form action="" method="POST" enctype="multipart/form-data">
+              <fieldset>
+                  <legend>Formulario de login</legend>
+                  <p>
+                    <label for="input-email">Digite seu email:</label>
+                    <input type="email" name="email" required placeholder="Digite seu email" id="input-email" maxlength="50" minlength="10"/><br><br>
+                    <label for="input-password">Digite sua senha:</label>
+                    <input type="password" name="nome" required placeholder="Digite sua senha" id="input-password" maxlength="18" minlength="8"/><br><br>
+                    <label>Nos envie uma foto sua:</label>
+                    <input type="file" accept="image/*">
+                  </p>
+                  <button type="submit">Enviar</button>
+              </fieldset>
+          </form>
+    </main>
+</body>
+</html>
