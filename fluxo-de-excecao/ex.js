@@ -31,7 +31,7 @@ console.log(soma(2, 3)) */
 
 const verificacao = (value1, value2) =>{
     if( typeof value1 !== 'number' || typeof value2 !== 'number'){
-        throw new Error `${value1} ou ${value2} invalidos, so posso calcular numeros`;
+        throw new Error(`${value1} ou ${value2} invalidos, so posso calcular numeros`);
     }
 };
 
@@ -40,7 +40,7 @@ const sum = (value1, value2) =>{
         verificacao(value1, value2);
         return value1 + value2
     }catch (error){
-        throw error.message;
+        console.log(`${error.message}`);
     }
 };
 
