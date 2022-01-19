@@ -20,7 +20,7 @@ console.log(isBig); */
 //neste outro caso conseguimos pegar o prieiro numero maior que 20
 //lembrando que ele utiliza a ordem do array
 
-const numbers = [19, 21, 30, 3, 45, 22, 15];
+/* const numbers = [19, 21, 30, 3, 45, 22, 15];
 
 const findDIvisibleBy3And5 = (element) => {
    return element.find((item) => {
@@ -30,4 +30,16 @@ const findDIvisibleBy3And5 = (element) => {
     });
 };
 
-console.log(findDIvisibleBy3And5(numbers));
+console.log(findDIvisibleBy3And5(numbers)); */
+
+const names = ['Joao', 'Irene', 'Fernando', 'Maria'];
+
+const findNameWithFiveLetters = (item) => {
+    return item.find((letters) => {
+        if (letters.length === 5) {
+            return letters;
+        }
+    });
+};
+
+console.log(findNameWithFiveLetters(names));
