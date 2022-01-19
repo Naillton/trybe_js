@@ -11,3 +11,13 @@ const multi = (element) => {
 };
 
 numbers.forEach(multi);
+//vamos para mais um exemplo
+
+const names = ['Bianca', 'Camila', 'Fernando', 'Ana Roberta'];
+
+const convertUpperCase = (name, index) => {
+    names[index] = name.toUpperCase();
+};
+
+names.forEach(convertUpperCase);
+console.log(names);
