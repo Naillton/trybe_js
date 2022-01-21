@@ -14,5 +14,18 @@ numbers.sort();
 //que o 10 vem depois do 1 e nao o 2.
 
 const result = numbers.sort((a, b) => a - b);
-console.log(result);
+//console.log(result);
 //colocando os valores em uma funcao com o sort() e passando como parametro a - b os valores serao ordenados em forma correta
+
+
+const people = [
+    { name: 'Mateus', age: 18 },
+    { name: 'José', age: 16 },
+    { name: 'Ana', age: 23 },
+    { name: 'Cláudia', age: 20 },
+    { name: 'Bruna', age: 19 },
+  ];
+
+  people.sort((a, b) => a.age - b.age);
+
+  console.log(people);
