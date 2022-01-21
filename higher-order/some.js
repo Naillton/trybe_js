@@ -31,4 +31,25 @@ const hasName = (arr, name) => {
   return result;
 }
 
-console.log(hasName(names, 'Ana'))
+//console.log(hasName(names, 'Ana'))
+
+/* no nosso exemplo anterior usamos o some para verificar se algum dos nomes existe no nosso array
+se o nome existir recebemos true se nao recebemos false. */
+
+const people = [
+    { name: 'Mateus', age: 18 },
+    { name: 'José', age: 16 },
+    { name: 'Ana', age: 23 },
+    { name: 'Cláudia', age: 20 },
+    { name: 'Bruna', age: 19 },
+  ];
+  
+  const verifyAges = (arr, minimumAge) => {
+    const result = arr.every((array) => array.age >= minimumAge ? true : false);
+    return result;
+  }
+  
+  console.log(verifyAges(people, 18));
+
+/*   O nosso codigo anterior percorre o array e se a idade for maior ou igual que a idade minima passada
+  retornamos true caso contrario retornamos false */
