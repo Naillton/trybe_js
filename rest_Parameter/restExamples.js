@@ -7,5 +7,10 @@ function params(...args) {
     return `Voce passou ${args.length} parametros para a funcao`;
 };
 
-console.log(params(0, 1, 2));
-console.log(params('string', null, [1, 2, 4], {}));
+//console.log(params(0, 1, 2));
+//console.log(params('string', null, [1, 2, 4], {}));
+
+const sum = (...args) => args.reduce((acc, current) => acc + current, 0);
+console.log(sum(4, 7, 8, 9, 60));
+
+//nesse segundo exemplo usamos a HOF reduce para calcular os argumentos passados pelo rest paremeter
