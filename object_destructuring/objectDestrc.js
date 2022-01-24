@@ -15,7 +15,7 @@ com ele podemos trbalhar sobre chaves e valores de um objeto de maneira rapida e
 
 //mas e se a chave do objeto tiver outro objeto como valor o que faremos ?
 
-const character = {
+/* const character = {
     name: 'Luke SkyWalker',
     age: '53',
     description: {
@@ -28,8 +28,8 @@ const character = {
     },
   };
 
-  const { name, age, homeWorld: { name: planetName }, description: { jedi } } = character;
-  console.log(`Esse e o ${name} ele tem ${age} anos, mora em ${planetName} ele e um jedi ? ${ jedi }`);
+  const { name, age, homeWorld: { name: planetName }, description: { jedi } } = character; */
+  //console.log(`Esse e o ${name} ele tem ${age} anos, mora em ${planetName} ele e um jedi ? ${ jedi }`);
   
   //desta forma podemos acessar chaves e valores, note que uma varivael foi passada para o name do planeta, guardando nela o valor do nome tatooine
 
@@ -40,7 +40,7 @@ const character = {
 
   const { workDays, weekend } = daysOfWeek;
 
-  console.log([...workDays, ...weekend]);
+  //console.log([...workDays, ...weekend]);
 
   //como mostrado acima podemos acessar os valores com o nosso spread operator, onde em vez de deixar os valores separados em arrays podemos juntalos
 
@@ -53,3 +53,15 @@ const character = {
   };
 
   const { a: name, b: classAssigned, c: subject } = student;
+
+  const product = {
+    name: 'Smart TV Crystal UHD',
+    price: '1899.05',
+    seller: 'Casas de Minas',
+  };
+
+  const productDetails = (({name, price, seller}) => {
+    return `Produto ${ name }, preco ${ price }, onde encontro: ${ seller }`;
+  });
+
+  console.log(productDetails(product));
