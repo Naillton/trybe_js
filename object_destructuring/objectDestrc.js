@@ -65,3 +65,5 @@ com ele podemos trbalhar sobre chaves e valores de um objeto de maneira rapida e
   });
 
   console.log(productDetails(product));
+
+  
