@@ -14,7 +14,7 @@ const despesas = [
     },
 ];
 // quanto de salario ganhamos ?
-const renda = 1000;
+const renda = 3500;
 
 // funcao despesa mensal recebe 3 parametros a nossa renda a despesa e uma funcao de calback
 // aqui criamos uma constante despesatotal que vai receber o calculo da callback
