@@ -10,7 +10,7 @@ class Person {
     this.weight = w;
   }
 
-  public sllep() {
+  sllep() {
     console.log(`${this.name}: sheep sheep sheep zzzzzzz`);
   }
 }

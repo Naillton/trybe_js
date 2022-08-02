@@ -16,7 +16,7 @@ class TV {
     this.connections = c;
   }
 
-  public turnOn() {
+  turnOn() {
     console.log(`
       VENHA COMPRAR JÁ A TV
       ${this.brand}
