@@ -1,8 +1,9 @@
 class TV {
-  brand: string;
-  size: number;
-  resolution: string;
-  connections: string;
+  private _brand: string;
+  private _size: number;
+  private _resolution: string;
+  private _connections: string;
+  private _connectedTo: string = '';
 
   constructor(
     b: string,
@@ -10,19 +11,32 @@ class TV {
     r: string,
     c: string,
   ) {
-    this.brand = b;
-    this.size = s;
-    this.resolution = r;
-    this.connections = c;
+    this._brand = b;
+    this._size = s;
+    this._resolution = r;
+    this._connections = c;
+    this.connectedTo;
+  }
+
+  get connectedTo() {
+    return this._connectedTo;
+  }
+
+  set connectedTo(newValue: string) {
+    if (newValue === this._connections) {
+      this._connectedTo = newValue;
+    } else {
+      this._connectedTo = "Sorry, connection unavailable!"
+    }
   }
 
   turnOn() {
     console.log(`
       VENHA COMPRAR JÁ A TV
-      ${this.brand}
-      ${this.size}
-      ${this.resolution}
-      ${this.connections}
+      ${this._brand}
+      ${this._size}
+      ${this._resolution}
+      ${this._connections}
     `);
   };
 }
@@ -35,3 +49,5 @@ const tv1 = new TV(
 );
 
 tv1.turnOn();
+tv1.connectedTo = 'HDMIS';
+console.log(tv1.connectedTo);
