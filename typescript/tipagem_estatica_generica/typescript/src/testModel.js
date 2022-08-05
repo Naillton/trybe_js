@@ -15,6 +15,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const BookModel_1 = __importDefault(require("./database/models/BookModel"));
 (() => __awaiter(void 0, void 0, void 0, function* () {
     const books = yield BookModel_1.default.findAll({ raw: true });
-    console.table(books);
+    console.log(books);
     process.exit(0);
 }))();
